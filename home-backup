@@ -13,7 +13,7 @@ fi
 
 # Backup home directory
 borg create -v --stats                          \
-    $REPO::$HOST$DOMAIN'-{now:%d-%m-%Y}'                   \
+    $REPO::$HOST$DOMAIN'-homedir-{now:%d-%m-%Y}'                   \
     /home/jack
 
 #Prune expired backups
