@@ -21,4 +21,3 @@ borg create -v --stats                          \
 echo "Pruning expired backups"
 borg prune -v --list $REPO --prefix $HOST$DOMAIN \
     --keep-daily=7 --keep-weekly=4 --keep-monthly=6
-~
