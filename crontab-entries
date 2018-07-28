@@ -1,0 +1,2 @@
+30 4 * * *      root    /home/jack/borg-scripts/home-backup >> /var/log/backup.log 2>&1
+40 4 * * *      root    /home/jack/borg-scripts/root-backup >> /var/log/backup.log 2>&1
