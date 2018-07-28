@@ -7,10 +7,10 @@ BORG_UNKNOWN_UNENCRYPTED_REPO_ACCESS_IS_OK=yes
 
 borgpid=$(ps aux | grep -v grep | grep borg | wc -l)
 #Bail if borg is already running, maybe previous run didn't finish
-if [ $borgpid -gt 0 ]; then
-    echo "Backup already running"
-    exit
-fi
+#if [ $borgpid -gt 0 ]; then
+#    echo "Backup already running"
+#    exit
+#fi
 
 # Backup home directory
 borg create -v --stats                          \
