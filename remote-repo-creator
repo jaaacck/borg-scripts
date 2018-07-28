@@ -7,4 +7,6 @@ REPO=backups@jumpbox.homelab:/mnt/nas/storage/Backups/servers/$HOST$DOMAIN
 # Backup home directory
 sudo borg init --encryption=none $REPO
 echo Repo created
+sudo touch /var/log/backup.log
+echo Log file created @ "/var/log/backup.log"
 echo Jack is the best 2018
